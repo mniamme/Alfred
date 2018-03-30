@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Alfred</string>
+    <string name="button_lights_on">Turn ON</string>
+    <string name="button_lights_off">Turn OFF</string>
+    <string name="alfred_pic">alfred</string>
+    <string name="alfred_question">How Can I Help You, Sir?</string>
+    <string name="button_control_lights">Control Lights</string>
+    <string name="button_wake_me">Wake Me Up</string>
+    <string name="welcome_description">This is a Welcome Page containing Batman logo</string>
+    <string name="control_lights_bar">Control Lights</string>
+    <string name="lights_on">Lights ON</string>
+    <string name="lights_off">Lights OFF</string>
+    <string name="wake_me_bar">Wake Me Up</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="no_alarm">Alarm isn\'t set</string>
+    <string name="alarm_pic">alarm_pic</string>
+    <string name="wake_up">Wake Up</string>
+    <string name="button_stop">OK</string>
+    <string name="check_lights_off">Turn off lights now</string>
+    <string name="check_lights_on">Turn on lights on waking up</string>
+    <string name="check_play_music">Play music on waking up</string>
+</resources>

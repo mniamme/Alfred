@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="batman.alfred.WakeMeActivity"
+    android:id="@+id/relativeLayout">
+
+
+    <TimePicker
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="337dp"
+        android:headerBackground="@color/colorPrimary"
+        android:numbersSelectorColor="@android:color/background_dark"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_set_alarm"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:onClick="setAlarm"
+        android:text="@string/set_alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_play_music" />
+
+    <Button
+        android:id="@+id/button_cancel_alarm"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="cancelAlarm"
+        android:text="@string/cancel_alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_set_alarm"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/alarm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/no_alarm"
+        android:textColor="@color/colorAccent"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm" />
+
+    <CheckBox
+        android:id="@+id/check_lights_off"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/background_light"
+        android:checked="false"
+        android:text="@string/check_lights_off"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_text" />
+
+    <CheckBox
+        android:id="@+id/check_lights_on"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:buttonTint="@android:color/background_light"
+        android:text="@string/check_lights_on"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_lights_off" />
+
+    <CheckBox
+        android:id="@+id/check_play_music"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:buttonTint="@android:color/background_light"
+        android:checked="false"
+        android:text="@string/check_play_music"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_lights_on" />
+
+</android.support.constraint.ConstraintLayout>
+
